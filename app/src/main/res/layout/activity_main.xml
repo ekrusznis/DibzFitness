@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/topLogo"
+       android:src="@drawable/logo"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/splash_ft"
+       android:layout_width="match_parent"
+       android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_below="@+id/topLogo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/crownImage"
+                android:background="@color/black"
+                android:src="@drawable/crown"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:layout_marginStart="12dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/crownImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/forkImage"
+                android:background="@color/black"
+                android:src="@drawable/forkknife"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Nutrition"
+                android:textColor="@color/white"
+                android:layout_marginStart="12dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/forkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/checkImage"
+                android:background="@color/black"
+                android:src="@drawable/checklist"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="My Tasks"
+                android:textColor="@color/white"
+                android:layout_marginStart="12dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/checkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_below="@+id/firstRow"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/progressImage"
+                android:background="@color/black"
+                android:src="@drawable/progresstrasker"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Progress Tracker"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/progressImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/calImage"
+                android:background="@color/black"
+                android:src="@drawable/cal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Calender"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/calImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/myGroupImage"
+                android:background="@color/black"
+                android:src="@drawable/likeicon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="My Group"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/myGroupImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_below="@+id/secondRow"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/chatimage"
+                android:background="@color/black"
+                android:src="@drawable/chaticon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Share Ideas"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/chatimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/devicesImage"
+                android:background="@color/black"
+                android:src="@drawable/devices"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="My Devices"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/devicesImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/proImage"
+                android:background="@color/black"
+                android:src="@drawable/crown"
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Become Pro"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@+id/proImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
